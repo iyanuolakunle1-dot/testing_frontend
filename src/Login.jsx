@@ -8,6 +8,7 @@ import {
   FaEyeSlash,
 } from "react-icons/fa";
 
+// login
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -45,7 +46,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "https://testing-backend-8e5t.onrender.com:5000",
+        "https://testing-backend-8e5t.onrender.com",
         {
           email,
           password,
